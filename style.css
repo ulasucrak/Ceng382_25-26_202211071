@@ -8,8 +8,6 @@ html, body {
   padding: 0;
   height: 100%;
 }
-
-
 /* --- Splash Screen Styles --- */
 #splash {
     position: fixed;
@@ -308,5 +306,16 @@ html, body {
   @keyframes vader {
     0%, 100% { box-shadow: 0 0 10px #e51115; }
     50% { box-shadow: 0 0 16px #e51115; }
+  }
+  
+  @font-face {
+    font-family: 'Star Jedi';
+    src: url('starjedi/Starjedi.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  body{
+    font-family: 'Star Jedi', sans-serif;
   }
   
