@@ -1,0 +1,112 @@
+
+/* Import a retro-inspired monospaced font (Roboto Mono here, you can change if desired) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 20px;
+  background: #000; /* deep space black */
+  color: #fff;
+  font-family: 'Roboto Mono', monospace;
+  background-image: url('background2.jpeg'); /* subtle space background */
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/* Container Box styling */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.85); /* semi-transparent black */
+  padding: 30px;
+  border: 2px solid #ffcc00; /* Star Wars yellow highlight */
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ffcc00;
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px #ffcc00;
+  text-transform: uppercase;
+}
+
+/* Form styling */
+form {
+  margin-bottom: 30px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  background: #111;
+  border: 1px solid #444;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+button {
+  background: #ffcc00;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background: #e6b800;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background: #222;
+  color: #ffcc00;
+  border-bottom: 2px solid #ffcc00;
+}
+
+table td {
+  background: rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid #333;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .container {
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+}
