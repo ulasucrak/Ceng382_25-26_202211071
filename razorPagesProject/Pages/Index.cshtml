@@ -1,0 +1,85 @@
+﻿@page
+@model ClassInfoRazorPages.Pages.IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Class Information";
+}
+
+
+
+<!-- Content section: Manage Classes -->
+<section id="manage-classes" class="bg-light">
+    <div class="container px-5">
+        <div class="row gx-5">
+            <!-- Form Column -->
+            <div class="col-lg-5 left">
+                @* chatgpt promt: change class information text to add class if we are adding edit class if we are editting *@
+                <h2 class="mb-4">@((Model.ClassInfo.Id == 0) ? "Add Class" : "Edit Class")</h2>
+                <form method="post">
+                    <div class="form-group mb-3">
+                        <label asp-for="ClassInfo.ClassName"></label>
+                        <input asp-for="ClassInfo.ClassName" class="form-control" />
+                        <span asp-validation-for="ClassInfo.ClassName" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="ClassInfo.StudentCount"></label>
+                        <input asp-for="ClassInfo.StudentCount" class="form-control" />
+                        <span asp-validation-for="ClassInfo.StudentCount" class="text-danger"></span>
+                    </div>
+                    <div class="form-group mb-3">
+                        <label asp-for="ClassInfo.Description"></label>
+                        <textarea asp-for="ClassInfo.Description" class="form-control"></textarea>
+                    </div>
+
+                    <input type="hidden" asp-for="ClassInfo.Id" />
+
+                    <button type="submit"
+                            asp-page-handler="Save"
+                            class="btn @(Model.ClassInfo.Id == 0 ? "btn-primary" : "btn-warning")">
+                        @(Model.ClassInfo.Id == 0 ? "Add" : "Edit")
+                    </button>
+                </form>
+            </div>
+
+            <!-- Table Column -->
+            <div class="col-lg-7 right">
+                <h4 class="mb-3">Class List</h4>
+                <table class="table table-bordered table-sm">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Class Name</th>
+                            <th>Student Count</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.ClassList)
+                        {
+                            <tr>
+                                <td>@item.Id</td>
+                                <td>@item.ClassName</td>
+                                <td>@item.StudentCount</td>
+                                <td>@item.Description</td>
+                                <td>
+                                    <form method="post">
+                                        <input type="hidden" name="id" value="@item.Id" />
+                                        <button type="submit" class="btn btn-warning btn-sm" asp-page-handler="Edit">Edit</button>
+                                        <button type="submit" class="btn btn-danger btn-sm" asp-page-handler="Delete">Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
+
