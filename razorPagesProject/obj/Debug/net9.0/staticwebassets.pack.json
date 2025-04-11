@@ -5,12 +5,36 @@
       "PackagePath": "staticwebassets/Week5App.owrrg75pfs.bundle.scp.css"
     },
     {
+      "Id": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/favicon.ico",
+      "PackagePath": "staticwebassets/assets/favicon.ico"
+    },
+    {
+      "Id": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/01.jpg",
+      "PackagePath": "staticwebassets/assets/img/01.jpg"
+    },
+    {
+      "Id": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/02.jpg",
+      "PackagePath": "staticwebassets/assets/img/02.jpg"
+    },
+    {
+      "Id": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/03.jpg",
+      "PackagePath": "staticwebassets/assets/img/03.jpg"
+    },
+    {
       "Id": "/Users/ulasucrak/Desktop/Week5App/wwwroot/css/site.css",
       "PackagePath": "staticwebassets/css/site.css"
     },
     {
+      "Id": "/Users/ulasucrak/Desktop/Week5App/wwwroot/css/styles.css",
+      "PackagePath": "staticwebassets/css/styles.css"
+    },
+    {
       "Id": "/Users/ulasucrak/Desktop/Week5App/wwwroot/favicon.ico",
       "PackagePath": "staticwebassets/favicon.ico"
+    },
+    {
+      "Id": "/Users/ulasucrak/Desktop/Week5App/wwwroot/js/scripts.js",
+      "PackagePath": "staticwebassets/js/scripts.js"
     },
     {
       "Id": "/Users/ulasucrak/Desktop/Week5App/wwwroot/js/site.js",

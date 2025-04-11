@@ -14,11 +14,54 @@ namespace ClassInfoRazorPages.Pages
         [BindProperty]
         public ClassInformationModel ClassInfo { get; set; } = new ClassInformationModel();
 
-        public List<ClassInformationModel> ClassList => classList;
+        [BindProperty(SupportsGet = true)]
+        public string? FilterKeyword { get; set; }
+
+        [BindProperty(SupportsGet = true)]
+        public int PageNumber { get; set; } = 1;
+
+        public int PageSize { get; set; } = 10;
+        public int TotalPages { get; set; }
+
+        public List<ClassInformationTable> ClassTable { get; set; } = new List<ClassInformationTable>();
 
         public void OnGet()
         {
-            // Nothing to do here
+            // Veri üret (ilk çalıştırmada)
+            if (!classList.Any())
+            {
+                for (int i = 0; i < 100; i++)
+                {
+                    classList.Add(new ClassInformationModel
+                    {
+                        Id = nextId++,
+                        ClassName = $"Class {i + 1}",
+                        StudentCount = 10 + i % 20,
+                        Description = $"This is class {i + 1}"
+                    });
+                }
+            }
+
+            var filtered = classList.AsQueryable();
+
+            if (!string.IsNullOrEmpty(FilterKeyword))
+            {
+                filtered = filtered.Where(x => x.ClassName != null && x.ClassName.Contains(FilterKeyword));
+            }
+
+            TotalPages = (int)System.Math.Ceiling(filtered.Count() / (double)PageSize);
+
+            ClassTable = filtered
+                .Skip((PageNumber - 1) * PageSize)
+                .Take(PageSize)
+                .Select(x => new ClassInformationTable
+                {
+                    ClassName = x.ClassName,
+                    StudentCount = x.StudentCount,
+                    Description = x.Description,
+                    Id = x.Id
+                })
+                .ToList();
         }
 
         public IActionResult OnPostSave()
@@ -42,7 +85,7 @@ namespace ClassInfoRazorPages.Pages
                 }
             }
 
-            return RedirectToPage();
+            return RedirectToPage(new { FilterKeyword, PageNumber });
         }
 
         public IActionResult OnPostEdit(int id)
@@ -70,7 +113,7 @@ namespace ClassInfoRazorPages.Pages
                 classList.Remove(itemToDelete);
             }
 
-            return RedirectToPage();
+            return RedirectToPage(new { FilterKeyword, PageNumber });
         }
     }
 }

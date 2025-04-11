@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "a67D1sB7Sb4MHPE0ThFF8tV5LSRgh0EXys7/Xyf4HRY=",
+  "Hash": "nPt4Jc2yAd0aW6a/evOWygC0MVdJD0XJF5dHd+ZUSy8=",
   "Source": "Week5App",
   "BasePath": "_content/Week5App",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "/Users/ulasucrak/Desktop/Week5App/wwwroot/css/site.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "0suozzrugb",
-      "Integrity": "0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=",
+      "Fingerprint": "pw5l7j5n1s",
+      "Integrity": "KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/Week5App/wwwroot/css/site.css"
@@ -836,6 +836,27 @@
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/Week5App/wwwroot/lib/bootstrap/dist/js/bootstrap.bundle.min.js"
     },
     {
+      "Identity": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/ko6hkf65fl-devepoo3hg.gz",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "assets/favicon#[.{fingerprint=devepoo3hg}]?.ico.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/favicon.ico",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "m5i0bmrrnp",
+      "Integrity": "FjF51/7FB7Sk65GZyo7P/TKt+toUuGaObR6pDV05VOE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/favicon.ico"
+    },
+    {
       "Identity": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/l75p5tvr2d-r4e9w2rdcm.gz",
       "SourceId": "Week5App",
       "SourceType": "Discovered",
@@ -855,6 +876,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/Week5App/wwwroot/lib/bootstrap/dist/css/bootstrap-utilities.css.map"
+    },
+    {
+      "Identity": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/l8r7y70dpw-7wo0yubdcm.gz",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "css/styles#[.{fingerprint=7wo0yubdcm}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/ulasucrak/Desktop/Week5App/wwwroot/css/styles.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "766diaoob9",
+      "Integrity": "f5oP4IATKlt6E5XLAKQFvDiHSeFj199UeBoj8UvprNs=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/ulasucrak/Desktop/Week5App/wwwroot/css/styles.css"
     },
     {
       "Identity": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/l8yt6cd2z2-aexeepp0ev.gz",
@@ -1023,6 +1065,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/Week5App/wwwroot/lib/jquery-validation-unobtrusive/dist/jquery.validate.unobtrusive.js"
+    },
+    {
+      "Identity": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/qmgtgdofqb-fljrwmvaez.gz",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "js/scripts#[.{fingerprint=fljrwmvaez}]?.js.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/ulasucrak/Desktop/Week5App/wwwroot/js/scripts.js",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3s3xlonhl6",
+      "Integrity": "Y9YavR5cALRM79+r4w+60TjQ6M+6+tMJ/e9AIBtQQlE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/ulasucrak/Desktop/Week5App/wwwroot/js/scripts.js"
     },
     {
       "Identity": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/rb2skbtoa5-87fc7y1x7t.gz",
@@ -1403,6 +1466,90 @@
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/scopedcss/projectbundle/Week5App.bundle.scp.css"
     },
     {
+      "Identity": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/favicon.ico",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/Week5App/wwwroot/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "assets/favicon#[.{fingerprint}]?.ico",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "devepoo3hg",
+      "Integrity": "ixBg8ZN2jFW8SN7ei6jam+bJP45tyulG428aiVa3Jps=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/favicon.ico"
+    },
+    {
+      "Identity": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/01.jpg",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/Week5App/wwwroot/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "assets/img/01#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "0u5vj9xg4k",
+      "Integrity": "uAmKHtwpDbC6H4OoUrMOY2j3pBR83uPezf9prHePSLQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/img/01.jpg"
+    },
+    {
+      "Identity": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/02.jpg",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/Week5App/wwwroot/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "assets/img/02#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "sb0bnk74ev",
+      "Integrity": "aI1GVE9f1PNT90H5aP91huH933tHVG9l+KwtRzxxcf8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/img/02.jpg"
+    },
+    {
+      "Identity": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/03.jpg",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/Week5App/wwwroot/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "assets/img/03#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k0c9gqz7et",
+      "Integrity": "7LJ1Br+xoD2gz5hwrXCuUNJRUueqvITPX9sJl7WJhNw=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/assets/img/03.jpg"
+    },
+    {
       "Identity": "/Users/ulasucrak/Desktop/Week5App/wwwroot/css/site.css",
       "SourceId": "Week5App",
       "SourceType": "Discovered",
@@ -1424,6 +1571,27 @@
       "OriginalItemSpec": "wwwroot/css/site.css"
     },
     {
+      "Identity": "/Users/ulasucrak/Desktop/Week5App/wwwroot/css/styles.css",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/Week5App/wwwroot/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "css/styles#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7wo0yubdcm",
+      "Integrity": "BwgKlLXlOd0W1iUUQU4jjLLYWcyXTE8si71R9ZlebF8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/styles.css"
+    },
+    {
       "Identity": "/Users/ulasucrak/Desktop/Week5App/wwwroot/favicon.ico",
       "SourceId": "Week5App",
       "SourceType": "Discovered",
@@ -1443,6 +1611,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/favicon.ico"
+    },
+    {
+      "Identity": "/Users/ulasucrak/Desktop/Week5App/wwwroot/js/scripts.js",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/Week5App/wwwroot/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "js/scripts#[.{fingerprint}]?.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fljrwmvaez",
+      "Integrity": "DbxyAb4NMGiJs9KYhF11Wyc930Q4QrTt5jiCAZmgzF8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/js/scripts.js"
     },
     {
       "Identity": "/Users/ulasucrak/Desktop/Week5App/wwwroot/js/site.js",
@@ -2728,6 +2917,550 @@
   ],
   "Endpoints": [
     {
+      "Route": "assets/favicon.devepoo3hg.ico",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/ko6hkf65fl-devepoo3hg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000490677134"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2037"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FjF51/7FB7Sk65GZyo7P/TKt+toUuGaObR6pDV05VOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ixBg8ZN2jFW8SN7ei6jam+bJP45tyulG428aiVa3Jps=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "devepoo3hg"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ixBg8ZN2jFW8SN7ei6jam+bJP45tyulG428aiVa3Jps="
+        }
+      ]
+    },
+    {
+      "Route": "assets/favicon.devepoo3hg.ico",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23462"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ixBg8ZN2jFW8SN7ei6jam+bJP45tyulG428aiVa3Jps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "devepoo3hg"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ixBg8ZN2jFW8SN7ei6jam+bJP45tyulG428aiVa3Jps="
+        }
+      ]
+    },
+    {
+      "Route": "assets/favicon.devepoo3hg.ico.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/ko6hkf65fl-devepoo3hg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2037"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FjF51/7FB7Sk65GZyo7P/TKt+toUuGaObR6pDV05VOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "devepoo3hg"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/favicon.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FjF51/7FB7Sk65GZyo7P/TKt+toUuGaObR6pDV05VOE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/favicon.ico",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/ko6hkf65fl-devepoo3hg.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000490677134"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2037"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FjF51/7FB7Sk65GZyo7P/TKt+toUuGaObR6pDV05VOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"ixBg8ZN2jFW8SN7ei6jam+bJP45tyulG428aiVa3Jps=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ixBg8ZN2jFW8SN7ei6jam+bJP45tyulG428aiVa3Jps="
+        }
+      ]
+    },
+    {
+      "Route": "assets/favicon.ico",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "23462"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ixBg8ZN2jFW8SN7ei6jam+bJP45tyulG428aiVa3Jps=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ixBg8ZN2jFW8SN7ei6jam+bJP45tyulG428aiVa3Jps="
+        }
+      ]
+    },
+    {
+      "Route": "assets/favicon.ico.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/ko6hkf65fl-devepoo3hg.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2037"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FjF51/7FB7Sk65GZyo7P/TKt+toUuGaObR6pDV05VOE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FjF51/7FB7Sk65GZyo7P/TKt+toUuGaObR6pDV05VOE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/01.0u5vj9xg4k.jpg",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "547797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uAmKHtwpDbC6H4OoUrMOY2j3pBR83uPezf9prHePSLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "0u5vj9xg4k"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/01.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uAmKHtwpDbC6H4OoUrMOY2j3pBR83uPezf9prHePSLQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/01.jpg",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/01.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "547797"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uAmKHtwpDbC6H4OoUrMOY2j3pBR83uPezf9prHePSLQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uAmKHtwpDbC6H4OoUrMOY2j3pBR83uPezf9prHePSLQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/02.jpg",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aI1GVE9f1PNT90H5aP91huH933tHVG9l+KwtRzxxcf8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aI1GVE9f1PNT90H5aP91huH933tHVG9l+KwtRzxxcf8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/02.sb0bnk74ev.jpg",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/02.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "252376"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aI1GVE9f1PNT90H5aP91huH933tHVG9l+KwtRzxxcf8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "sb0bnk74ev"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/02.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aI1GVE9f1PNT90H5aP91huH933tHVG9l+KwtRzxxcf8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/03.jpg",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/03.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "535000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7LJ1Br+xoD2gz5hwrXCuUNJRUueqvITPX9sJl7WJhNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-7LJ1Br+xoD2gz5hwrXCuUNJRUueqvITPX9sJl7WJhNw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/img/03.k0c9gqz7et.jpg",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/assets/img/03.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "535000"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"7LJ1Br+xoD2gz5hwrXCuUNJRUueqvITPX9sJl7WJhNw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k0c9gqz7et"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/img/03.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-7LJ1Br+xoD2gz5hwrXCuUNJRUueqvITPX9sJl7WJhNw="
+        }
+      ]
+    },
+    {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/0prb0zapep-b9sayid5wm.gz",
       "Selectors": [
@@ -2748,11 +3481,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 01:19:44 GMT"
+          "Value": "Thu, 03 Apr 2025 15:23:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2813,7 +3546,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 01:19:44 GMT"
+          "Value": "Thu, 03 Apr 2025 15:23:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2854,11 +3587,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 01:19:44 GMT"
+          "Value": "Thu, 03 Apr 2025 15:23:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2884,7 +3617,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA="
         }
       ]
     },
@@ -2909,11 +3642,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 01:19:44 GMT"
+          "Value": "Thu, 03 Apr 2025 15:23:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2966,7 +3699,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 01:19:44 GMT"
+          "Value": "Thu, 03 Apr 2025 15:23:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2999,11 +3732,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y=\""
+          "Value": "\"KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 28 Mar 2025 01:19:44 GMT"
+          "Value": "Thu, 03 Apr 2025 15:23:49 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -3021,7 +3754,305 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-0FC1RbVkLkwKhJ1oi+r2Hw4Tm9av6DyJeo95YVvfA3Y="
+          "Value": "sha256-KbRAtTdCZlkPQMEP8615MCQRMWQsaAwQYpxvPAoetmA="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.7wo0yubdcm.css",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/l8r7y70dpw-7wo0yubdcm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000032839644"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30450"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f5oP4IATKlt6E5XLAKQFvDiHSeFj199UeBoj8UvprNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:33:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BwgKlLXlOd0W1iUUQU4jjLLYWcyXTE8si71R9ZlebF8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7wo0yubdcm"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BwgKlLXlOd0W1iUUQU4jjLLYWcyXTE8si71R9ZlebF8="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.7wo0yubdcm.css",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/css/styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BwgKlLXlOd0W1iUUQU4jjLLYWcyXTE8si71R9ZlebF8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:33:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7wo0yubdcm"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BwgKlLXlOd0W1iUUQU4jjLLYWcyXTE8si71R9ZlebF8="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.7wo0yubdcm.css.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/l8r7y70dpw-7wo0yubdcm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30450"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f5oP4IATKlt6E5XLAKQFvDiHSeFj199UeBoj8UvprNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:33:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7wo0yubdcm"
+        },
+        {
+          "Name": "label",
+          "Value": "css/styles.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-f5oP4IATKlt6E5XLAKQFvDiHSeFj199UeBoj8UvprNs="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/l8r7y70dpw-7wo0yubdcm.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000032839644"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30450"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f5oP4IATKlt6E5XLAKQFvDiHSeFj199UeBoj8UvprNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:33:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"BwgKlLXlOd0W1iUUQU4jjLLYWcyXTE8si71R9ZlebF8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BwgKlLXlOd0W1iUUQU4jjLLYWcyXTE8si71R9ZlebF8="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/css/styles.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "239559"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BwgKlLXlOd0W1iUUQU4jjLLYWcyXTE8si71R9ZlebF8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:33:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BwgKlLXlOd0W1iUUQU4jjLLYWcyXTE8si71R9ZlebF8="
+        }
+      ]
+    },
+    {
+      "Route": "css/styles.css.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/l8r7y70dpw-7wo0yubdcm.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "30450"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"f5oP4IATKlt6E5XLAKQFvDiHSeFj199UeBoj8UvprNs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:33:05 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-f5oP4IATKlt6E5XLAKQFvDiHSeFj199UeBoj8UvprNs="
         }
       ]
     },
@@ -3320,6 +4351,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-wfFuuYm+Lh6RbCeeiUqxw334b/hIOkp5j9eokGUM1Y0="
+        }
+      ]
+    },
+    {
+      "Route": "js/scripts.fljrwmvaez.js",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/qmgtgdofqb-fljrwmvaez.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004237288136"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y9YavR5cALRM79+r4w+60TjQ6M+6+tMJ/e9AIBtQQlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DbxyAb4NMGiJs9KYhF11Wyc930Q4QrTt5jiCAZmgzF8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fljrwmvaez"
+        },
+        {
+          "Name": "label",
+          "Value": "js/scripts.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DbxyAb4NMGiJs9KYhF11Wyc930Q4QrTt5jiCAZmgzF8="
+        }
+      ]
+    },
+    {
+      "Route": "js/scripts.fljrwmvaez.js",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/js/scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "333"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DbxyAb4NMGiJs9KYhF11Wyc930Q4QrTt5jiCAZmgzF8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fljrwmvaez"
+        },
+        {
+          "Name": "label",
+          "Value": "js/scripts.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-DbxyAb4NMGiJs9KYhF11Wyc930Q4QrTt5jiCAZmgzF8="
+        }
+      ]
+    },
+    {
+      "Route": "js/scripts.fljrwmvaez.js.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/qmgtgdofqb-fljrwmvaez.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y9YavR5cALRM79+r4w+60TjQ6M+6+tMJ/e9AIBtQQlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fljrwmvaez"
+        },
+        {
+          "Name": "label",
+          "Value": "js/scripts.js.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y9YavR5cALRM79+r4w+60TjQ6M+6+tMJ/e9AIBtQQlE="
+        }
+      ]
+    },
+    {
+      "Route": "js/scripts.js",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/qmgtgdofqb-fljrwmvaez.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.004237288136"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y9YavR5cALRM79+r4w+60TjQ6M+6+tMJ/e9AIBtQQlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"DbxyAb4NMGiJs9KYhF11Wyc930Q4QrTt5jiCAZmgzF8=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DbxyAb4NMGiJs9KYhF11Wyc930Q4QrTt5jiCAZmgzF8="
+        }
+      ]
+    },
+    {
+      "Route": "js/scripts.js",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/wwwroot/js/scripts.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "333"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"DbxyAb4NMGiJs9KYhF11Wyc930Q4QrTt5jiCAZmgzF8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-DbxyAb4NMGiJs9KYhF11Wyc930Q4QrTt5jiCAZmgzF8="
+        }
+      ]
+    },
+    {
+      "Route": "js/scripts.js.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/Week5App/obj/Debug/net9.0/compressed/qmgtgdofqb-fljrwmvaez.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "235"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y9YavR5cALRM79+r4w+60TjQ6M+6+tMJ/e9AIBtQQlE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Thu, 03 Apr 2025 15:23:46 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y9YavR5cALRM79+r4w+60TjQ6M+6+tMJ/e9AIBtQQlE="
         }
       ]
     },
