@@ -1,0 +1,145 @@
+﻿@page
+@model ClassInfoRazorPages.Pages.IndexModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Class Information";
+}
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+
+<!-- DARK MODE TOGGLE BUTTON -->
+<button id="darkModeToggle" class="dark-toggle-fixed" title="Toggle Dark Mode">🌙</button>
+
+<section class="container mt-5 fade-in">
+    <div class="row g-4">
+        <!-- Left Column: Add/Edit Form -->
+        <div class="col-lg-5">
+            <div class="card p-4 shadow-sm">
+                <h3 class="mb-3">@((Model.ClassInfo.Id == 0) ? "Add Class" : "Edit Class")</h3>
+                <form method="post">
+                    <input type="hidden" asp-for="ClassInfo.Id" />
+                    <div class="mb-3">
+                        <label asp-for="ClassInfo.ClassName" class="form-label"></label>
+                        <input asp-for="ClassInfo.ClassName" class="form-control" />
+                        <span asp-validation-for="ClassInfo.ClassName" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="ClassInfo.StudentCount" class="form-label"></label>
+                        <input asp-for="ClassInfo.StudentCount" class="form-control" />
+                        <span asp-validation-for="ClassInfo.StudentCount" class="text-danger"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label asp-for="ClassInfo.Description" class="form-label"></label>
+                        <input asp-for="ClassInfo.Description" class="form-control" />
+                        <span asp-validation-for="ClassInfo.Description" class="text-danger"></span>
+                    </div>
+                    <button type="submit" asp-page-handler="Save" class="btn btn-success">
+                        <i class="fas fa-save"></i> Save
+                    </button>
+                </form>
+
+                <!-- Export Column Selection -->
+                <div class="mt-4">
+                    <h5>Select Columns to Export</h5>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="SelectedColumns" value="ClassName" id="colClassName" form="exportFilteredForm" />
+                        <label class="form-check-label" for="colClassName">Class Name</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="SelectedColumns" value="StudentCount" id="colStudentCount" form="exportFilteredForm" />
+                        <label class="form-check-label" for="colStudentCount">Student Count</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" name="SelectedColumns" value="Description" id="colDescription" form="exportFilteredForm" />
+                        <label class="form-check-label" for="colDescription">Description</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Filter + Table + Pagination -->
+        <div class="col-lg-7">
+            <div class="card p-4 shadow-sm">
+                <h2 class="mb-3">Class Information Table</h2>
+
+                <!-- Filter Form -->
+                <form method="get" class="mb-3">
+                    <div class="input-group">
+                        <input name="FilterKeyword" class="form-control" placeholder="Filter by Class Name..." value="@Model.FilterKeyword" />
+                        <button type="submit" class="btn btn-primary">Filter</button>
+                    </div>
+                </form>
+
+                <!-- Table -->
+                <table class="table table-striped table-hover align-middle">
+                    <thead>
+                        <tr>
+                            <th>Class Name</th>
+                            <th>Student Count</th>
+                            <th>Description</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var item in Model.ClassTable)
+                        {
+                            <tr>
+                                <td>@item.ClassName</td>
+                                <td><span class="badge bg-info">@item.StudentCount</span></td>
+                                <td>@item.Description</td>
+                                <td>
+                                    <form method="post" asp-page-handler="Edit" asp-route-id="@item.Id" class="d-inline">
+                                        <button type="submit" class="btn btn-sm btn-warning"><i class="fas fa-pen"></i> Edit</button>
+                                    </form>
+                                    <form method="post" asp-page-handler="Delete" asp-route-id="@item.Id" class="d-inline" onsubmit="return confirm('Are you sure you want to delete this item?');">
+                                        <button type="submit" class="btn btn-sm btn-danger"><i class="fas fa-trash"></i> Delete</button>
+                                    </form>
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                <!-- Pagination -->
+                <nav>
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item @(Model.PageNumber <= 1 ? "disabled" : "")">
+                            <a class="page-link" href="?FilterKeyword=@Model.FilterKeyword&PageNumber=@(Model.PageNumber - 1)">Previous</a>
+                        </li>
+
+                        @for (int i = 1; i <= Model.TotalPages; i++)
+                        {
+                            <li class="page-item @(i == Model.PageNumber ? "active" : "")">
+                                <a class="page-link" href="?FilterKeyword=@Model.FilterKeyword&PageNumber=@i">@i</a>
+                            </li>
+                        }
+
+                        <li class="page-item @(Model.PageNumber >= Model.TotalPages ? "disabled" : "")">
+                            <a class="page-link" href="?FilterKeyword=@Model.FilterKeyword&PageNumber=@(Model.PageNumber + 1)">Next</a>
+                        </li>
+                    </ul>
+                </nav>
+
+                <!-- Export Buttons -->
+                <div class="mt-4 btn-group" role="group">
+                    <form method="post" asp-page-handler="ExportJson" id="exportFilteredForm">
+                        <input type="hidden" name="filtered" value="true" />
+                        <button type="submit" class="btn btn-outline-info">Export Filtered JSON</button>
+                    </form>
+                    <form method="post" asp-page-handler="ExportJson" id="exportAllForm">
+                        <input type="hidden" name="filtered" value="false" />
+                        <button type="submit" class="btn btn-outline-secondary">Export All JSON</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
