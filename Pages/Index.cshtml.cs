@@ -49,6 +49,20 @@ namespace ClassInfoRazorPages.Pages
 
         public void OnGet(int? editId, int? deleteId)
         {
+            var sessionUser = HttpContext.Session.GetString("username");
+    var sessionToken = HttpContext.Session.GetString("token");
+
+    var cookieUser = Request.Cookies["username"];
+    var cookieToken = Request.Cookies["token"];
+
+    if (string.IsNullOrEmpty(sessionUser) || 
+        string.IsNullOrEmpty(cookieUser) || 
+        sessionUser != cookieUser || 
+        sessionToken != cookieToken)
+    {
+        Response.Redirect("/Login");
+        return;
+    }
             if (deleteId.HasValue)
             {
                 var toRemove = _classes.FirstOrDefault(c => c.Id == deleteId);

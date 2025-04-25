@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "NWHjMAyAvBqUhRTk4RRkrgALF5ApzbKp0wlSPnzyLl0=",
+  "Hash": "RZzw1YV1TjFA8lpeaXmsdcJc9aTWfl3wMr5qxGb9QHo=",
   "Source": "Week5App",
   "BasePath": "_content/Week5App",
   "Mode": "Default",
@@ -477,6 +477,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/lib/jquery/dist/jquery.js"
+    },
+    {
+      "Identity": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/8e87i0nv2t-uu674b1132.gz",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "data/users#[.{fingerprint=uu674b1132}]?.json.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/data/users.json",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3vc7zdqad6",
+      "Integrity": "IUyUwKtgVyzhhd1d85SzlCZuB8q80Yq1h7E5NgL/NFE=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/data/users.json"
     },
     {
       "Identity": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/9hksmapx1y-ausgxo2sd3.gz",
@@ -1151,12 +1172,12 @@
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/lib/bootstrap/dist/js/bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-owrrg75pfs.gz",
+      "Identity": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-jbybjnkq7f.gz",
       "SourceId": "Week5App",
       "SourceType": "Computed",
       "ContentRoot": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Week5App",
-      "RelativePath": "Week5App#[.{fingerprint=owrrg75pfs}]?.styles.css.gz",
+      "RelativePath": "Week5App#[.{fingerprint=jbybjnkq7f}]?.styles.css.gz",
       "AssetKind": "All",
       "AssetMode": "CurrentProject",
       "AssetRole": "Alternative",
@@ -1165,8 +1186,8 @@
       "RelatedAsset": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/scopedcss/bundle/Week5App.styles.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9x1ed49750",
-      "Integrity": "PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA=",
+      "Fingerprint": "9d95auhdz7",
+      "Integrity": "rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/scopedcss/bundle/Week5App.styles.css"
@@ -1256,12 +1277,12 @@
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/lib/bootstrap/dist/css/bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-owrrg75pfs.gz",
+      "Identity": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-jbybjnkq7f.gz",
       "SourceId": "Week5App",
       "SourceType": "Computed",
       "ContentRoot": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/",
       "BasePath": "_content/Week5App",
-      "RelativePath": "Week5App#[.{fingerprint=owrrg75pfs}]!.bundle.scp.css.gz",
+      "RelativePath": "Week5App#[.{fingerprint=jbybjnkq7f}]!.bundle.scp.css.gz",
       "AssetKind": "All",
       "AssetMode": "Reference",
       "AssetRole": "Alternative",
@@ -1270,8 +1291,8 @@
       "RelatedAsset": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/scopedcss/projectbundle/Week5App.bundle.scp.css",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "9x1ed49750",
-      "Integrity": "PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA=",
+      "Fingerprint": "9d95auhdz7",
+      "Integrity": "rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/scopedcss/projectbundle/Week5App.bundle.scp.css"
@@ -1438,8 +1459,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ApplicationBundle",
-      "Fingerprint": "owrrg75pfs",
-      "Integrity": "COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144=",
+      "Fingerprint": "jbybjnkq7f",
+      "Integrity": "f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/scopedcss/bundle/Week5App.styles.css"
@@ -1459,8 +1480,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "ScopedCss",
       "AssetTraitValue": "ProjectBundle",
-      "Fingerprint": "owrrg75pfs",
-      "Integrity": "COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144=",
+      "Fingerprint": "jbybjnkq7f",
+      "Integrity": "f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/scopedcss/projectbundle/Week5App.bundle.scp.css"
@@ -1590,6 +1611,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/css/styles.css"
+    },
+    {
+      "Identity": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/data/users.json",
+      "SourceId": "Week5App",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/",
+      "BasePath": "_content/Week5App",
+      "RelativePath": "data/users#[.{fingerprint}]?.json",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "uu674b1132",
+      "Integrity": "dv54GH5jFg1VdcJcweeIkvNUCMyJc+XGHoXwKCrLcWA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/data/users.json"
     },
     {
       "Identity": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/favicon.ico",
@@ -4053,6 +4095,304 @@
         {
           "Name": "integrity",
           "Value": "sha256-qhg1q9qO7TJGAms/Ok5+gruxaqi52zRCl1sscpSeIHE="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.json",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/8e87i0nv2t-uu674b1132.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005208333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "191"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IUyUwKtgVyzhhd1d85SzlCZuB8q80Yq1h7E5NgL/NFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 19:28:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"dv54GH5jFg1VdcJcweeIkvNUCMyJc+XGHoXwKCrLcWA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dv54GH5jFg1VdcJcweeIkvNUCMyJc+XGHoXwKCrLcWA="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.json",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/data/users.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "494"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dv54GH5jFg1VdcJcweeIkvNUCMyJc+XGHoXwKCrLcWA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 19:28:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-dv54GH5jFg1VdcJcweeIkvNUCMyJc+XGHoXwKCrLcWA="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.json.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/8e87i0nv2t-uu674b1132.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "191"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IUyUwKtgVyzhhd1d85SzlCZuB8q80Yq1h7E5NgL/NFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 19:28:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-IUyUwKtgVyzhhd1d85SzlCZuB8q80Yq1h7E5NgL/NFE="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.uu674b1132.json",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/8e87i0nv2t-uu674b1132.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.005208333333"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "191"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IUyUwKtgVyzhhd1d85SzlCZuB8q80Yq1h7E5NgL/NFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 19:28:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"dv54GH5jFg1VdcJcweeIkvNUCMyJc+XGHoXwKCrLcWA=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uu674b1132"
+        },
+        {
+          "Name": "label",
+          "Value": "data/users.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dv54GH5jFg1VdcJcweeIkvNUCMyJc+XGHoXwKCrLcWA="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.uu674b1132.json",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/data/users.json",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "494"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"dv54GH5jFg1VdcJcweeIkvNUCMyJc+XGHoXwKCrLcWA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 19:28:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uu674b1132"
+        },
+        {
+          "Name": "label",
+          "Value": "data/users.json"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-dv54GH5jFg1VdcJcweeIkvNUCMyJc+XGHoXwKCrLcWA="
+        }
+      ]
+    },
+    {
+      "Route": "data/users.uu674b1132.json.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/8e87i0nv2t-uu674b1132.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "191"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/json"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"IUyUwKtgVyzhhd1d85SzlCZuB8q80Yq1h7E5NgL/NFE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 25 Apr 2025 19:28:49 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uu674b1132"
+        },
+        {
+          "Name": "label",
+          "Value": "data/users.json.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-IUyUwKtgVyzhhd1d85SzlCZuB8q80Yq1h7E5NgL/NFE="
         }
       ]
     },
@@ -22616,12 +22956,12 @@
     },
     {
       "Route": "Week5App.bundle.scp.css",
-      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-owrrg75pfs.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-jbybjnkq7f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001869158879"
+          "Quality": "0.001865671642"
         }
       ],
       "ResponseHeaders": [
@@ -22631,15 +22971,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "534"
+          "Value": "535"
         },
         {
           "Name": "ETag",
-          "Value": "\"PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA=\""
+          "Value": "\"rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22659,13 +22999,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144=\""
+          "Value": "W/\"f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144="
+          "Value": "sha256-f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o="
         }
       ]
     },
@@ -22688,11 +23028,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144=\""
+          "Value": "\"f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22702,13 +23042,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144="
+          "Value": "sha256-f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o="
         }
       ]
     },
     {
       "Route": "Week5App.bundle.scp.css.gz",
-      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-owrrg75pfs.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-jbybjnkq7f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22717,7 +23057,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "534"
+          "Value": "535"
         },
         {
           "Name": "Content-Type",
@@ -22725,11 +23065,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA=\""
+          "Value": "\"rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22747,18 +23087,18 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA="
+          "Value": "sha256-rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws="
         }
       ]
     },
     {
-      "Route": "Week5App.owrrg75pfs.bundle.scp.css",
-      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-owrrg75pfs.gz",
+      "Route": "Week5App.jbybjnkq7f.bundle.scp.css",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-jbybjnkq7f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001869158879"
+          "Quality": "0.001865671642"
         }
       ],
       "ResponseHeaders": [
@@ -22768,15 +23108,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "534"
+          "Value": "535"
         },
         {
           "Name": "ETag",
-          "Value": "\"PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA=\""
+          "Value": "\"rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22796,13 +23136,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144=\""
+          "Value": "W/\"f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "owrrg75pfs"
+          "Value": "jbybjnkq7f"
         },
         {
           "Name": "label",
@@ -22810,12 +23150,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144="
+          "Value": "sha256-f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o="
         }
       ]
     },
     {
-      "Route": "Week5App.owrrg75pfs.bundle.scp.css",
+      "Route": "Week5App.jbybjnkq7f.bundle.scp.css",
       "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/scopedcss/projectbundle/Week5App.bundle.scp.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22833,11 +23173,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144=\""
+          "Value": "\"f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22847,7 +23187,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "owrrg75pfs"
+          "Value": "jbybjnkq7f"
         },
         {
           "Name": "label",
@@ -22855,13 +23195,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144="
+          "Value": "sha256-f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o="
         }
       ]
     },
     {
-      "Route": "Week5App.owrrg75pfs.bundle.scp.css.gz",
-      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-owrrg75pfs.gz",
+      "Route": "Week5App.jbybjnkq7f.bundle.scp.css.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-jbybjnkq7f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -22870,7 +23210,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "534"
+          "Value": "535"
         },
         {
           "Name": "Content-Type",
@@ -22878,11 +23218,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA=\""
+          "Value": "\"rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22900,7 +23240,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "owrrg75pfs"
+          "Value": "jbybjnkq7f"
         },
         {
           "Name": "label",
@@ -22908,18 +23248,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA="
+          "Value": "sha256-rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws="
         }
       ]
     },
     {
-      "Route": "Week5App.owrrg75pfs.styles.css",
-      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-owrrg75pfs.gz",
+      "Route": "Week5App.jbybjnkq7f.styles.css",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-jbybjnkq7f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001869158879"
+          "Quality": "0.001865671642"
         }
       ],
       "ResponseHeaders": [
@@ -22929,15 +23269,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "534"
+          "Value": "535"
         },
         {
           "Name": "ETag",
-          "Value": "\"PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA=\""
+          "Value": "\"rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -22957,13 +23297,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144=\""
+          "Value": "W/\"f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "owrrg75pfs"
+          "Value": "jbybjnkq7f"
         },
         {
           "Name": "label",
@@ -22971,12 +23311,12 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144="
+          "Value": "sha256-f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o="
         }
       ]
     },
     {
-      "Route": "Week5App.owrrg75pfs.styles.css",
+      "Route": "Week5App.jbybjnkq7f.styles.css",
       "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/scopedcss/bundle/Week5App.styles.css",
       "Selectors": [],
       "ResponseHeaders": [
@@ -22994,11 +23334,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144=\""
+          "Value": "\"f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23008,7 +23348,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "owrrg75pfs"
+          "Value": "jbybjnkq7f"
         },
         {
           "Name": "label",
@@ -23016,13 +23356,13 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144="
+          "Value": "sha256-f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o="
         }
       ]
     },
     {
-      "Route": "Week5App.owrrg75pfs.styles.css.gz",
-      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-owrrg75pfs.gz",
+      "Route": "Week5App.jbybjnkq7f.styles.css.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-jbybjnkq7f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -23031,7 +23371,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "534"
+          "Value": "535"
         },
         {
           "Name": "Content-Type",
@@ -23039,11 +23379,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA=\""
+          "Value": "\"rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23061,7 +23401,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "owrrg75pfs"
+          "Value": "jbybjnkq7f"
         },
         {
           "Name": "label",
@@ -23069,18 +23409,18 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA="
+          "Value": "sha256-rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws="
         }
       ]
     },
     {
       "Route": "Week5App.styles.css",
-      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-owrrg75pfs.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-jbybjnkq7f.gz",
       "Selectors": [
         {
           "Name": "Content-Encoding",
           "Value": "gzip",
-          "Quality": "0.001869158879"
+          "Quality": "0.001865671642"
         }
       ],
       "ResponseHeaders": [
@@ -23090,15 +23430,15 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "534"
+          "Value": "535"
         },
         {
           "Name": "ETag",
-          "Value": "\"PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA=\""
+          "Value": "\"rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23118,13 +23458,13 @@
         },
         {
           "Name": "ETag",
-          "Value": "W/\"COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144=\""
+          "Value": "W/\"f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o=\""
         }
       ],
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144="
+          "Value": "sha256-f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o="
         }
       ]
     },
@@ -23147,11 +23487,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144=\""
+          "Value": "\"f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23161,13 +23501,13 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-COLGtw9ffJ40B3/3c0GqhwgdhdQUb0plwb0n6B0D144="
+          "Value": "sha256-f/FG+1nlLCtE9vPEi3E2gMBebg+2WNpsz5lY7eoT6+o="
         }
       ]
     },
     {
       "Route": "Week5App.styles.css.gz",
-      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-owrrg75pfs.gz",
+      "AssetFile": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-jbybjnkq7f.gz",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -23176,7 +23516,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "534"
+          "Value": "535"
         },
         {
           "Name": "Content-Type",
@@ -23184,11 +23524,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA=\""
+          "Value": "\"rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 11 Apr 2025 11:03:18 GMT"
+          "Value": "Fri, 25 Apr 2025 19:59:03 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -23206,7 +23546,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-PQ6yIztcqgsxlhu2ebpYgTpb/b6kkA1YSbdPsK/8VqA="
+          "Value": "sha256-rZC7Zo/JfudPQY7FfnEBVvylG0cG1X25x5ySMQ/Osws="
         }
       ]
     }

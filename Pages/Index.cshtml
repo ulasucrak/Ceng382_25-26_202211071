@@ -1,4 +1,25 @@
-﻿@page
+﻿@* CHATGPT Prompt
+
+📚 Session ve Cookie Detayları:
+Session'a: username, token değerlerini kaydet
+Cookie'ye: username, token değerlerini yaz
+Cookie süresi 30 dakika
+Cookie HttpOnly = true, SameSite=Strict, Secure=false
+🚪 Login Akışı:
+Kullanıcı doğru bilgilerle login olursa Index sayfasına yönlendirilecek
+Yanlış girişte hata mesajı gösterilecek
+Session ve Cookie kontrolü yapılacak
+Uyuşmuyorsa Login sayfasına yönlendirilecek
+🚪 Logout Akışı:
+Session temizlenecek
+Cookie'ler silinecek
+Kullanıcı Login sayfasına yönlendirilecek
+🎨 UI Basit Olacak:
+Bootstrap 5 kullan (yüksek görsellik şart değil)
+Formlar düzgün hizalı olsun
+Hata mesajları alert kutusu içinde gösterilsin *@
+
+@page
 @model ClassInfoRazorPages.Pages.IndexModel
 @{
     ViewData["Title"] = "Class Information";
@@ -146,6 +167,8 @@
                                 </ul>
                             </nav>
                         }
+                        <a asp-page="/Logout" class="btn btn-danger float-end">Logout</a>
+
                     </div>
                 </div>
             </div>

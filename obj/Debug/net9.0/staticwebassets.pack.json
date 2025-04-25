@@ -2,7 +2,7 @@
   "Files": [
     {
       "Id": "/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/scopedcss/projectbundle/Week5App.bundle.scp.css",
-      "PackagePath": "staticwebassets/Week5App.owrrg75pfs.bundle.scp.css"
+      "PackagePath": "staticwebassets/Week5App.jbybjnkq7f.bundle.scp.css"
     },
     {
       "Id": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/assets/favicon.ico",
@@ -27,6 +27,10 @@
     {
       "Id": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/css/styles.css",
       "PackagePath": "staticwebassets/css/styles.css"
+    },
+    {
+      "Id": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/data/users.json",
+      "PackagePath": "staticwebassets/data/users.json"
     },
     {
       "Id": "/Users/ulasucrak/Desktop/RazorProject/wwwroot/favicon.ico",

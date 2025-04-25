@@ -204,6 +204,8 @@ C:/Users/ulasucrak/Desktop/WEB/dotnet/test/Week5Project/Week5App/obj/Debug/net9.
 /Users/ulasucrak/Desktop/RazorProject/bin/Debug/net9.0/Week5App.runtimeconfig.json
 /Users/ulasucrak/Desktop/RazorProject/bin/Debug/net9.0/Week5App.dll
 /Users/ulasucrak/Desktop/RazorProject/bin/Debug/net9.0/Week5App.pdb
+/Users/ulasucrak/Desktop/RazorProject/bin/Debug/net9.0/Newtonsoft.Json.dll
+/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/Week5App.csproj.AssemblyReference.cache
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/Week5App.GeneratedMSBuildEditorConfig.editorconfig
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/Week5App.AssemblyInfoInputs.cache
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/Week5App.AssemblyInfo.cs
@@ -216,6 +218,8 @@ C:/Users/ulasucrak/Desktop/WEB/dotnet/test/Week5Project/Week5App/obj/Debug/net9.
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/scopedcss/projectbundle/Week5App.bundle.scp.css
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/ko6hkf65fl-devepoo3hg.gz
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/0prb0zapep-b9sayid5wm.gz
+/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/l8r7y70dpw-dnlc9khibe.gz
+/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/8e87i0nv2t-uu674b1132.gz
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/bxvo95ktdh-61n19gt1b8.gz
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/qmgtgdofqb-fljrwmvaez.gz
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/lhxgb3xjm5-xtxxf3hu2r.gz
@@ -278,8 +282,8 @@ C:/Users/ulasucrak/Desktop/WEB/dotnet/test/Week5Project/Week5App/obj/Debug/net9.
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/cvijnabvjg-muycvpuwrr.gz
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/rb2skbtoa5-87fc7y1x7t.gz
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/rja830bkxt-mlv21k5csn.gz
-/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-owrrg75pfs.gz
-/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-owrrg75pfs.gz
+/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/s5niafhawb-jbybjnkq7f.gz
+/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/tmnztwbl6w-jbybjnkq7f.gz
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/staticwebassets.build.json
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/staticwebassets.development.json
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/staticwebassets.build.endpoints.json
@@ -289,12 +293,9 @@ C:/Users/ulasucrak/Desktop/WEB/dotnet/test/Week5Project/Week5App/obj/Debug/net9.
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/staticwebassets/msbuild.buildMultiTargeting.Week5App.props
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/staticwebassets/msbuild.buildTransitive.Week5App.props
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/staticwebassets.pack.json
+/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/Week5App.csproj.Up2Date
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/Week5App.dll
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/refint/Week5App.dll
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/Week5App.pdb
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/Week5App.genruntimeconfig.cache
 /Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/ref/Week5App.dll
-/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/Week5App.csproj.AssemblyReference.cache
-/Users/ulasucrak/Desktop/RazorProject/bin/Debug/net9.0/Newtonsoft.Json.dll
-/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/Week5App.csproj.Up2Date
-/Users/ulasucrak/Desktop/RazorProject/obj/Debug/net9.0/compressed/l8r7y70dpw-dnlc9khibe.gz
