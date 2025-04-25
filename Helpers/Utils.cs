@@ -1,34 +1,28 @@
-using System.Text.Json;
-using System.Reflection;
+using Newtonsoft.Json;
 
-namespace ClassInfoRazorPages.Helpers
+namespace RazorPages.Helpers
 {
     public class Utils
     {
-        private static Utils? _instance;
-        public static Utils Instance => _instance ??= new Utils();
+        private static Utils _instance;
 
         private Utils() { }
 
-        public string ExportToJson<T>(List<T> data, List<string> selectedColumns)
+        public static Utils Instance
         {
-            if (selectedColumns == null || selectedColumns.Count == 0)
-                return JsonSerializer.Serialize(data, new JsonSerializerOptions { WriteIndented = true });
-
-            var filteredList = data.Select(item =>
+            get
             {
-                var dict = new Dictionary<string, object?>();
-
-                foreach (var prop in typeof(T).GetProperties())
+                if (_instance == null)
                 {
-                    if (selectedColumns.Contains(prop.Name))
-                        dict[prop.Name] = prop.GetValue(item);
+                    _instance = new Utils();
                 }
+                return _instance;
+            }
+        }
 
-                return dict;
-            }).ToList();
-
-            return JsonSerializer.Serialize(filteredList, new JsonSerializerOptions { WriteIndented = true });
+        public string ExportToJson<T>(T data)
+        {
+            return JsonConvert.SerializeObject(data);
         }
     }
 }

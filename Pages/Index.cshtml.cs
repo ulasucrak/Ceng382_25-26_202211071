@@ -1,139 +1,176 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using ClassInfoRazorPages.Models;
-using ClassInfoRazorPages.Helpers;
-using System.Collections.Generic;
+using Newtonsoft.Json;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 
 namespace ClassInfoRazorPages.Pages
 {
     public class IndexModel : PageModel
     {
-        private static List<ClassInformationModel> classList = new List<ClassInformationModel>();
+        private static List<ClassInformationModel> _classes = new();
         private static int nextId = 1;
 
         [BindProperty]
-        public ClassInformationModel ClassInfo { get; set; } = new ClassInformationModel();
+        public InputModel ClassInput { get; set; } = new();
+
+        public List<ClassInformationTable> FilteredClasses { get; set; } = new();
 
         [BindProperty(SupportsGet = true)]
-        public string? FilterKeyword { get; set; }
+        public string? SearchClassName { get; set; }
 
         [BindProperty(SupportsGet = true)]
         public int PageNumber { get; set; } = 1;
 
+        [BindProperty(SupportsGet = true)]
+        public List<string> SelectedColumns { get; set; } = new(); // 🔥 New binding!
+
         public int PageSize { get; set; } = 10;
         public int TotalPages { get; set; }
+        public bool IsEdit => ClassInput.Id > 0;
 
-        public List<ClassInformationTable> ClassTable { get; set; } = new List<ClassInformationTable>();
-
-        [BindProperty]
-        public List<string> SelectedColumns { get; set; } = new();
-
-        public void OnGet()
+        static IndexModel()
         {
-            // İlk kez yükleniyorsa 100 örnek veri oluştur
-            if (!classList.Any())
+            if (!_classes.Any())
             {
-                for (int i = 0; i < 100; i++)
+                for (int i = 1; i <= 100; i++)
                 {
-                    classList.Add(new ClassInformationModel
+                    _classes.Add(new ClassInformationModel
                     {
                         Id = nextId++,
-                        ClassName = $"Class {i + 1}",
-                        StudentCount = 10 + i % 20,
-                        Description = $"This is class {i + 1}"
+                        ClassName = $"Class {i}",
+                        StudentCount = i % 30 + 1,
+                        Description = $"Description for Class {i}"
                     });
                 }
             }
+        }
 
-            var filtered = classList.AsQueryable();
-
-            if (!string.IsNullOrEmpty(FilterKeyword))
+        public void OnGet(int? editId, int? deleteId)
+        {
+            if (deleteId.HasValue)
             {
-                filtered = filtered.Where(x => x.ClassName != null && x.ClassName.Contains(FilterKeyword));
+                var toRemove = _classes.FirstOrDefault(c => c.Id == deleteId);
+                if (toRemove != null)
+                    _classes.Remove(toRemove);
+                ClassInput = new InputModel(); // Form reset
+            }
+            else if (editId.HasValue)
+            {
+                var toEdit = _classes.FirstOrDefault(c => c.Id == editId);
+                if (toEdit != null)
+                {
+                    ClassInput = new InputModel
+                    {
+                        Id = toEdit.Id,
+                        ClassName = toEdit.ClassName,
+                        StudentCount = toEdit.StudentCount,
+                        Description = toEdit.Description
+                    };
+                }
+            }
+            else
+            {
+                ClassInput = new InputModel();
             }
 
-            TotalPages = (int)System.Math.Ceiling(filtered.Count() / (double)PageSize);
+            if (SelectedColumns == null || !SelectedColumns.Any())
+            {
+                SelectedColumns = new List<string> { "ClassName", "StudentCount", "Description" }; // 🔥 default selected
+            }
 
-            ClassTable = filtered
+            var query = _classes.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(SearchClassName))
+                query = query.Where(c => c.ClassName != null && c.ClassName.Contains(SearchClassName));
+
+            int totalItems = query.Count();
+            TotalPages = (int)Math.Ceiling(totalItems / (double)PageSize);
+
+            FilteredClasses = query
                 .Skip((PageNumber - 1) * PageSize)
                 .Take(PageSize)
-                .Select(x => new ClassInformationTable
+                .Select(c => new ClassInformationTable
                 {
-                    ClassName = x.ClassName,
-                    StudentCount = x.StudentCount,
-                    Description = x.Description,
-                    Id = x.Id
+                    Id = c.Id,
+                    ClassName = c.ClassName,
+                    StudentCount = c.StudentCount,
+                    Description = c.Description
                 })
                 .ToList();
         }
 
-        public IActionResult OnPostSave()
+        public IActionResult OnPost()
         {
             if (!ModelState.IsValid)
                 return Page();
 
-            if (ClassInfo.Id == 0)
+            if (ClassInput.Id > 0)
             {
-                ClassInfo.Id = nextId++;
-                classList.Add(ClassInfo);
+                var toUpdate = _classes.FirstOrDefault(c => c.Id == ClassInput.Id);
+                if (toUpdate != null)
+                {
+                    toUpdate.ClassName = ClassInput.ClassName;
+                    toUpdate.StudentCount = ClassInput.StudentCount;
+                    toUpdate.Description = ClassInput.Description;
+                }
             }
             else
             {
-                var itemToUpdate = classList.FirstOrDefault(x => x.Id == ClassInfo.Id);
-                if (itemToUpdate != null)
+                _classes.Add(new ClassInformationModel
                 {
-                    itemToUpdate.ClassName = ClassInfo.ClassName;
-                    itemToUpdate.StudentCount = ClassInfo.StudentCount;
-                    itemToUpdate.Description = ClassInfo.Description;
-                }
+                    Id = nextId++,
+                    ClassName = ClassInput.ClassName,
+                    StudentCount = ClassInput.StudentCount,
+                    Description = ClassInput.Description
+                });
             }
 
-            return RedirectToPage(new { FilterKeyword, PageNumber });
+            return RedirectToPage(new { PageNumber, SearchClassName, SelectedColumns });
         }
 
-        public IActionResult OnPostEdit(int id)
+        public IActionResult OnPostExportJson(string SearchClassName, int PageNumber, List<string> selectedColumns)
         {
-            var itemToEdit = classList.FirstOrDefault(x => x.Id == id);
-            if (itemToEdit != null)
-            {
-                ClassInfo = new ClassInformationModel
+            if (selectedColumns == null || !selectedColumns.Any())
+                selectedColumns = new List<string> { "ClassName", "StudentCount", "Description" };
+
+            var query = _classes.AsQueryable();
+            if (!string.IsNullOrWhiteSpace(SearchClassName))
+                query = query.Where(c => c.ClassName != null && c.ClassName.Contains(SearchClassName));
+
+            query = query.Skip((PageNumber - 1) * PageSize)
+                         .Take(PageSize);
+
+            var exportData = query
+                .Select(c => new Dictionary<string, object>
                 {
-                    Id = itemToEdit.Id,
-                    ClassName = itemToEdit.ClassName,
-                    StudentCount = itemToEdit.StudentCount,
-                    Description = itemToEdit.Description
-                };
-            }
+                    { "ClassName", selectedColumns.Contains("ClassName") && c.ClassName != null ? c.ClassName : null },
+                    { "StudentCount", selectedColumns.Contains("StudentCount") && c.StudentCount > 0 ? c.StudentCount : null },
+                    { "Description", selectedColumns.Contains("Description") && c.Description != null ? c.Description : null }
+                })
+                .Select(dict => dict
+                    .Where(kv => kv.Value != null)
+                    .ToDictionary(kv => kv.Key, kv => kv.Value))
+                .ToList();
 
-            return Page();
+            var json = JsonConvert.SerializeObject(exportData, Formatting.Indented);
+
+            return File(System.Text.Encoding.UTF8.GetBytes(json), "application/json", "export.json");
         }
 
-        public IActionResult OnPostDelete(int id)
+        public class InputModel
         {
-            var itemToDelete = classList.FirstOrDefault(x => x.Id == id);
-            if (itemToDelete != null)
-            {
-                classList.Remove(itemToDelete);
-            }
+            public int Id { get; set; }
 
-            return RedirectToPage(new { FilterKeyword, PageNumber });
-        }
+            [Required(ErrorMessage = "Class Name is required")]
+            public string ClassName { get; set; }
 
-        public IActionResult OnPostExportJson(bool filtered)
-        {
-            var exportData = filtered
-                ? ClassTable
-                : classList.Select(x => new ClassInformationTable
-                {
-                    ClassName = x.ClassName,
-                    StudentCount = x.StudentCount,
-                    Description = x.Description,
-                    Id = x.Id
-                }).ToList();
+            [Range(1, 100, ErrorMessage = "Student count must be between 1 and 100")]
+            public int StudentCount { get; set; }
 
-            var json = Utils.Instance.ExportToJson(exportData, SelectedColumns);
-            return File(System.Text.Encoding.UTF8.GetBytes(json), "application/json", "Export.json");
+            [Required(ErrorMessage = "Description is required")]
+            public string Description { get; set; }
         }
     }
 }

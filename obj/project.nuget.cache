@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "pS+ZZ6yL1Io=",
+  "dgSpecHash": "l+5XAteECDI=",
   "success": true,
-  "projectFilePath": "/Users/ulasucrak/Ceng382_25-26_202211071/razorPagesProject/Week5App.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "/Users/ulasucrak/Desktop/RazorProject/Week5App.csproj",
+  "expectedPackageFiles": [
+    "/Users/ulasucrak/.nuget/packages/newtonsoft.json/13.0.3/newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ulasucrak/Ceng382_25-26_202211071/razorPagesProject/Week5App.csproj": {}
+    "/Users/ulasucrak/Desktop/RazorProject/Week5App.csproj": {}
   },
   "projects": {
-    "/Users/ulasucrak/Ceng382_25-26_202211071/razorPagesProject/Week5App.csproj": {
+    "/Users/ulasucrak/Desktop/RazorProject/Week5App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ulasucrak/Ceng382_25-26_202211071/razorPagesProject/Week5App.csproj",
+        "projectUniqueName": "/Users/ulasucrak/Desktop/RazorProject/Week5App.csproj",
         "projectName": "Week5App",
-        "projectPath": "/Users/ulasucrak/Ceng382_25-26_202211071/razorPagesProject/Week5App.csproj",
+        "projectPath": "/Users/ulasucrak/Desktop/RazorProject/Week5App.csproj",
         "packagesPath": "/Users/ulasucrak/.nuget/packages/",
-        "outputPath": "/Users/ulasucrak/Ceng382_25-26_202211071/razorPagesProject/obj/",
+        "outputPath": "/Users/ulasucrak/Desktop/RazorProject/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ulasucrak/.nuget/NuGet/NuGet.Config"
@@ -43,6 +43,12 @@
       "frameworks": {
         "net9.0": {
           "targetAlias": "net9.0",
+          "dependencies": {
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
