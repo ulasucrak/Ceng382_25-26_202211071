@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ulasucrak/Desktop/RazorProject/Week5App.csproj": {}
+    "/Users/ulasucrak/Ceng382_25-26_202211071/Week5App.csproj": {}
   },
   "projects": {
-    "/Users/ulasucrak/Desktop/RazorProject/Week5App.csproj": {
+    "/Users/ulasucrak/Ceng382_25-26_202211071/Week5App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ulasucrak/Desktop/RazorProject/Week5App.csproj",
+        "projectUniqueName": "/Users/ulasucrak/Ceng382_25-26_202211071/Week5App.csproj",
         "projectName": "Week5App",
-        "projectPath": "/Users/ulasucrak/Desktop/RazorProject/Week5App.csproj",
+        "projectPath": "/Users/ulasucrak/Ceng382_25-26_202211071/Week5App.csproj",
         "packagesPath": "/Users/ulasucrak/.nuget/packages/",
-        "outputPath": "/Users/ulasucrak/Desktop/RazorProject/obj/",
+        "outputPath": "/Users/ulasucrak/Ceng382_25-26_202211071/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ulasucrak/.nuget/NuGet/NuGet.Config"
