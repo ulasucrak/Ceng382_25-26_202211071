@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/ulasucrak/Ceng382_25-26_202211071/Week5App.csproj": {}
+    "/Users/ulasucrak/Desktop/Ceng382_25-26_202211071-week8/Week5App.csproj": {}
   },
   "projects": {
-    "/Users/ulasucrak/Ceng382_25-26_202211071/Week5App.csproj": {
+    "/Users/ulasucrak/Desktop/Ceng382_25-26_202211071-week8/Week5App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/ulasucrak/Ceng382_25-26_202211071/Week5App.csproj",
+        "projectUniqueName": "/Users/ulasucrak/Desktop/Ceng382_25-26_202211071-week8/Week5App.csproj",
         "projectName": "Week5App",
-        "projectPath": "/Users/ulasucrak/Ceng382_25-26_202211071/Week5App.csproj",
+        "projectPath": "/Users/ulasucrak/Desktop/Ceng382_25-26_202211071-week8/Week5App.csproj",
         "packagesPath": "/Users/ulasucrak/.nuget/packages/",
-        "outputPath": "/Users/ulasucrak/Ceng382_25-26_202211071/obj/",
+        "outputPath": "/Users/ulasucrak/Desktop/Ceng382_25-26_202211071-week8/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/ulasucrak/.nuget/NuGet/NuGet.Config"
@@ -44,6 +44,20 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[9.0.4, )"
+            },
             "Newtonsoft.Json": {
               "target": "Package",
               "version": "[13.0.3, )"

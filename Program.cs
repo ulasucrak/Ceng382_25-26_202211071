@@ -1,7 +1,16 @@
+using ClassInfoRazorPages.Data;
+using Microsoft.EntityFrameworkCore;
+
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
+
+builder.Services.AddDbContext<SchoolDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("SchoolDbConnection")));
+
 
 // 👉 Session servisini ekliyoruz
 builder.Services.AddSession(options =>
@@ -34,5 +43,12 @@ app.UseAuthorization();
 app.MapStaticAssets();
 app.MapRazorPages()
    .WithStaticAssets();
+
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    var context = services.GetRequiredService<SchoolDbContext>();
+    DbInitializer.Initialize(context);
+}
 
 app.Run();

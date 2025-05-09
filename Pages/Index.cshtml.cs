@@ -1,21 +1,26 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using ClassInfoRazorPages.Models;
+using Microsoft.EntityFrameworkCore;
 using Newtonsoft.Json;
+using ClassInfoRazorPages.Models;
+using ClassInfoRazorPages.Data;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
 
 namespace ClassInfoRazorPages.Pages
 {
     public class IndexModel : PageModel
     {
-        private static List<ClassInformationModel> _classes = new();
-        private static int nextId = 1;
+        private readonly SchoolDbContext _context;
+
+        public IndexModel(SchoolDbContext context)
+        {
+            _context = context;
+        }
 
         [BindProperty]
         public InputModel ClassInput { get; set; } = new();
 
-        public List<ClassInformationTable> FilteredClasses { get; set; } = new();
+        public List<Class> FilteredClasses { get; set; } = new();
 
         [BindProperty(SupportsGet = true)]
         public string? SearchClassName { get; set; }
@@ -24,152 +29,138 @@ namespace ClassInfoRazorPages.Pages
         public int PageNumber { get; set; } = 1;
 
         [BindProperty(SupportsGet = true)]
-        public List<string> SelectedColumns { get; set; } = new(); // 🔥 New binding!
+        public List<string> SelectedColumns { get; set; } = new();
 
         public int PageSize { get; set; } = 10;
         public int TotalPages { get; set; }
         public bool IsEdit => ClassInput.Id > 0;
 
-        static IndexModel()
+        public async Task<IActionResult> OnGetAsync(int? editId, int? deleteId)
         {
-            if (!_classes.Any())
-            {
-                for (int i = 1; i <= 100; i++)
-                {
-                    _classes.Add(new ClassInformationModel
-                    {
-                        Id = nextId++,
-                        ClassName = $"Class {i}",
-                        StudentCount = i % 30 + 1,
-                        Description = $"Description for Class {i}"
-                    });
-                }
-            }
-        }
-
-        public void OnGet(int? editId, int? deleteId)
-        {
+            // 🔒 Session & Cookie validation
             var sessionUser = HttpContext.Session.GetString("username");
-    var sessionToken = HttpContext.Session.GetString("token");
+            var sessionToken = HttpContext.Session.GetString("token");
+            var cookieUser = Request.Cookies["username"];
+            var cookieToken = Request.Cookies["token"];
 
-    var cookieUser = Request.Cookies["username"];
-    var cookieToken = Request.Cookies["token"];
+            if (string.IsNullOrEmpty(sessionUser) || string.IsNullOrEmpty(cookieUser) ||
+                sessionUser != cookieUser || sessionToken != cookieToken)
+            {
+                return RedirectToPage("/Login");
+            }
 
-    if (string.IsNullOrEmpty(sessionUser) || 
-        string.IsNullOrEmpty(cookieUser) || 
-        sessionUser != cookieUser || 
-        sessionToken != cookieToken)
-    {
-        Response.Redirect("/Login");
-        return;
-    }
+            // 🗑️ SOFT DELETE
             if (deleteId.HasValue)
             {
-                var toRemove = _classes.FirstOrDefault(c => c.Id == deleteId);
-                if (toRemove != null)
-                    _classes.Remove(toRemove);
-                ClassInput = new InputModel(); // Form reset
+                var toSoftDelete = await _context.Classes.FindAsync(deleteId.Value);
+                if (toSoftDelete != null)
+                {
+                    toSoftDelete.IsActive = false;
+                    await _context.SaveChangesAsync();
+                }
+                ClassInput = new InputModel(); // Reset form
             }
+            // ✏️ EDIT
             else if (editId.HasValue)
             {
-                var toEdit = _classes.FirstOrDefault(c => c.Id == editId);
+                var toEdit = await _context.Classes.FindAsync(editId.Value);
                 if (toEdit != null)
                 {
                     ClassInput = new InputModel
                     {
                         Id = toEdit.Id,
-                        ClassName = toEdit.ClassName,
-                        StudentCount = toEdit.StudentCount,
+                        ClassName = toEdit.Name,
+                        StudentCount = toEdit.PersonCount,
                         Description = toEdit.Description
                     };
                 }
             }
-            else
-            {
-                ClassInput = new InputModel();
-            }
 
             if (SelectedColumns == null || !SelectedColumns.Any())
             {
-                SelectedColumns = new List<string> { "ClassName", "StudentCount", "Description" }; // 🔥 default selected
+                SelectedColumns = new List<string> { "ClassName", "StudentCount", "Description" };
             }
 
-            var query = _classes.AsQueryable();
+            // 🔍 FILTER + HIDE INACTIVE
+            var query = _context.Classes
+                .Where(c => c.IsActive);
 
             if (!string.IsNullOrWhiteSpace(SearchClassName))
-                query = query.Where(c => c.ClassName != null && c.ClassName.Contains(SearchClassName));
+                query = query.Where(c => c.Name.Contains(SearchClassName));
 
-            int totalItems = query.Count();
+            // 📄 PAGINATION
+            int totalItems = await query.CountAsync();
             TotalPages = (int)Math.Ceiling(totalItems / (double)PageSize);
 
-            FilteredClasses = query
+            FilteredClasses = await query
+                .OrderBy(c => c.Id)
                 .Skip((PageNumber - 1) * PageSize)
                 .Take(PageSize)
-                .Select(c => new ClassInformationTable
-                {
-                    Id = c.Id,
-                    ClassName = c.ClassName,
-                    StudentCount = c.StudentCount,
-                    Description = c.Description
-                })
-                .ToList();
+                .ToListAsync();
+
+            return Page();
         }
 
-        public IActionResult OnPost()
+        public async Task<IActionResult> OnPostAsync()
         {
             if (!ModelState.IsValid)
                 return Page();
 
             if (ClassInput.Id > 0)
             {
-                var toUpdate = _classes.FirstOrDefault(c => c.Id == ClassInput.Id);
+                var toUpdate = await _context.Classes.FindAsync(ClassInput.Id);
                 if (toUpdate != null)
                 {
-                    toUpdate.ClassName = ClassInput.ClassName;
-                    toUpdate.StudentCount = ClassInput.StudentCount;
+                    toUpdate.Name = ClassInput.ClassName;
+                    toUpdate.PersonCount = ClassInput.StudentCount;
                     toUpdate.Description = ClassInput.Description;
+                    await _context.SaveChangesAsync();
                 }
             }
             else
             {
-                _classes.Add(new ClassInformationModel
+                var newClass = new Class
                 {
-                    Id = nextId++,
-                    ClassName = ClassInput.ClassName,
-                    StudentCount = ClassInput.StudentCount,
-                    Description = ClassInput.Description
-                });
+                    Name = ClassInput.ClassName,
+                    PersonCount = ClassInput.StudentCount,
+                    Description = ClassInput.Description,
+                    IsActive = true
+                };
+
+                _context.Classes.Add(newClass);
+                await _context.SaveChangesAsync();
             }
 
             return RedirectToPage(new { PageNumber, SearchClassName, SelectedColumns });
         }
 
-        public IActionResult OnPostExportJson(string SearchClassName, int PageNumber, List<string> selectedColumns)
+        public async Task<IActionResult> OnPostExportJsonAsync(string SearchClassName, int PageNumber, List<string> selectedColumns)
         {
             if (selectedColumns == null || !selectedColumns.Any())
                 selectedColumns = new List<string> { "ClassName", "StudentCount", "Description" };
 
-            var query = _classes.AsQueryable();
+            var query = _context.Classes
+                .Where(c => c.IsActive);
+
             if (!string.IsNullOrWhiteSpace(SearchClassName))
-                query = query.Where(c => c.ClassName != null && c.ClassName.Contains(SearchClassName));
+                query = query.Where(c => c.Name.Contains(SearchClassName));
 
             query = query.Skip((PageNumber - 1) * PageSize)
                          .Take(PageSize);
 
-            var exportData = query
+            var exportData = await query
                 .Select(c => new Dictionary<string, object>
                 {
-                    { "ClassName", selectedColumns.Contains("ClassName") && c.ClassName != null ? c.ClassName : null },
-                    { "StudentCount", selectedColumns.Contains("StudentCount") && c.StudentCount > 0 ? c.StudentCount : null },
-                    { "Description", selectedColumns.Contains("Description") && c.Description != null ? c.Description : null }
+                    { "ClassName", selectedColumns.Contains("ClassName") ? c.Name : null },
+                    { "StudentCount", selectedColumns.Contains("StudentCount") ? c.PersonCount : null },
+                    { "Description", selectedColumns.Contains("Description") ? c.Description : null }
                 })
                 .Select(dict => dict
                     .Where(kv => kv.Value != null)
                     .ToDictionary(kv => kv.Key, kv => kv.Value))
-                .ToList();
+                .ToListAsync();
 
             var json = JsonConvert.SerializeObject(exportData, Formatting.Indented);
-
             return File(System.Text.Encoding.UTF8.GetBytes(json), "application/json", "export.json");
         }
 
